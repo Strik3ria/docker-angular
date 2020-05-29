@@ -16,4 +16,4 @@ install:
   - cd frontend && npm install
 
 script:
-  - cd frontend && npm run test
+  - npm run test
