@@ -1,0 +1,19 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - "12"
+
+addons:
+  chrome: stable
+
+cache:
+  directories:
+    - ./front-end/node_modules
+
+install:
+  - cd front-end && npm install
+
+script:
+  - npm run test
